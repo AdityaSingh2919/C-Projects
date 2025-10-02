@@ -1,0 +1,46 @@
+
+#include <iostream>
+using namespace std; 
+int main() {
+int num;
+cout<<"Enter total Amount :";
+cin>>num;
+int result;
+
+
+    if(num >= 100){
+        result = num/100;
+        num = num-(result*100);
+        cout<<result <<" Number of 100 Rupess Note Required\n";
+
+     }
+   
+    if(num >= 50){
+        result = num/50;
+        num = num-(result*50);
+        cout<<result <<" Number of 50 Rupess Note Required\n";
+
+    }
+
+    if(num >= 20){
+        result = num/20;
+        num = num-(result*20);
+        cout<<result <<" Number of 20 Rupess Note Required\n";
+
+    }
+    if(num >= 10){
+        result = num/10;
+        num = num-(result*10);
+        cout<<result <<" Number of 10 Rupess Note Required\n";
+
+    }
+
+    if(num >= 1){
+        result = num/1;
+        num = num-(result*1);
+        cout<<result <<" Number of 1 Rupess Note Required\n";
+   
+    }
+
+    return 0;
+}
