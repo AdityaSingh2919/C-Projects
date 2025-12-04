@@ -15,8 +15,8 @@ int main()
     }
     
 bool isFound=false;
-    for(int i=0; i<5; i++){
-        for(int j=i+1; j<5; j++){
+    for(int i=0; i<n; i++){
+        for(int j=i+1; j<n; j++){
             if(arr[i] + arr[j]==a){
                 cout<<arr[i]<<" "<<arr[j]<<endl;
                 isFound=true;
