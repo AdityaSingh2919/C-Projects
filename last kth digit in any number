@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+    static int countLastSecondDigit(int n,int k){
+        
+        int digit=0;
+        for(int i=0;i<k;i++){
+            int rem=n%10;
+            digit=rem;
+            
+            n=n/10;
+        }return digit;
+    }
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		int n=4567;
+		int k=3;
+		int a=countLastSecondDigit(n,k);
+		System.out.println(a);
+		
+	}
+}
